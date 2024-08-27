@@ -7,7 +7,7 @@ const Footer = () => {
             <div className="container mx-auto px-20 lg:px-20 py-20 flex flex-col gap-10 md:flex-row justify-between border-t border-slate-800">
                 <div className="flex">
                     <p className="font-bold text-center">
-                    Uzair graphic &<span className="text-green-500 text-xl">Printing</span>
+                    <h1 className="text-[32px] mt-[89px]">Uzair graphic & Printing</h1>
                     </p>
                 </div>
 
@@ -63,7 +63,7 @@ const Footer = () => {
             </div>
 
             <div className="flex items-center justify-center py-10">
-                <span className="text-gray-400 leading-10">© Copyright, All Rights Reserved by VistaPrint</span>
+                <span className="text-gray-400 leading-10">© Copyright, All Rights Reserved by Uzair graphic & printing</span>
             </div>
         </footer>
         
