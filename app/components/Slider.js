@@ -5,7 +5,7 @@ function Slider() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const slides = [
     {
-      leftImage: "https://cms.cloudinary.vpsvc.com/image/upload/c_scale,dpr_auto,f_auto,w_960/India%20LOB/NVHP/New%20Home%20Page/Production/18th%20July%202024/IN_VC_ZIA-fashion_Marquee_01_Left",
+      leftImage: "https://cms.cloudinary.vpsvc.com/image/upload/c_scale,dpr_auto,f_auto,w_960/India%20LOB/NVHP/New%20Home%20Page/Production/18th%20July%202024/IN_VC_ZIA-fashion_Marquee_01_Left ",
       rightImage: "https://cms.cloudinary.vpsvc.com/image/upload/c_scale,dpr_auto,f_auto,w_960/India%20LOB/NVHP/New%20Home%20Page/Production/18th%20July%202024/IN_VC_ZIA-fashion_Marquee_02_Right",
       title: "My Name, My Pride",
       subtitle: "100 Visiting Cards at Rs 200",
@@ -50,7 +50,7 @@ function Slider() {
   return (
     <div className="relative w-full overflow-hidden">
       <div
-        className="flex transition-transform duration-500"
+        className="flex transition-transform duration-500 h-[580px]"
         style={{ transform: `translateX(-${currentSlide * 100}%)` }}
       >
         {slides.map((slide, index) => (
@@ -59,7 +59,7 @@ function Slider() {
               <img
                 src={slide.leftImage}
                 alt="Left Slide"
-                className="w-full h-full object-cover rounded-lg"
+                className="w-full h-full object-cover rounded-lg mt-[41px]"
               />
             </div>
             <div className="text-center flex-1 max-w-[676px]">
@@ -73,7 +73,7 @@ function Slider() {
               <img
                 src={slide.rightImage}
                 alt="Right Slide"
-                className="w-full h-full object-cover rounded-lg"
+                className="w-full h-full object-cover rounded-lg mt-[41px]"
               />
             </div>
           </div>

@@ -1,14 +1,17 @@
 "use client"
 import Header from "./components/Header";
-import Navbar from "./components/Navbar";
 import Slider from "./components/Slider";
+import Content from "./components/Content"
+
 function Home(){
   return(
     <>
   
-        <Navbar/>
+        
         <Slider/>
         <Header/>
+        <Content/>
+        
     
     </>
 

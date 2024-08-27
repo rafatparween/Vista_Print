@@ -1,3 +1,4 @@
+"use client"
 import { useState, useEffect } from "react";
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 
@@ -19,10 +20,11 @@ function Header() {
   ]);
 
   // Calculate the item width and visible items based on the viewport width
+
   useEffect(() => {
     const updateItemWidth = () => {
       const containerWidth = window.innerWidth;
-      const gap = 16; // Gap between images (16px)
+      const gap = 16; 
       const calculatedItemWidth = (containerWidth - (gap * (8 - 1))) / 8; // Adjust for the gap between items
       setItemWidth(calculatedItemWidth);
       setVisibleItems(Math.floor(containerWidth / calculatedItemWidth));
