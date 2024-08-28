@@ -10,15 +10,19 @@ const NavBar = () => {
       
       {/* Logo */}
       <div className="flex items-center pl-4 md:pl-8">
-        <Link legacyBehavior href="/company">
+        <Link legacyBehavior href="#">
           <a>
             <img
-              className="w-[313px] h-auto"
-              src="https://static.vecteezy.com/system/resources/previews/020/037/657/non_2x/uzp-letter-logo-design-on-white-background-uzp-creative-circle-letter-logo-concept-uzp-letter-design-vector.jpg"
+              className="h-[93px] w-[93px] text-[50px] "
+              src="https://static.vecteezy.com/system/resources/previews/009/324/629/non_2x/ugp-letter-logo-design-on-black-background-ugp-creative-initials-letter-logo-concept-ugp-letter-design-vector.jpg"
               alt="Logo"
             />
           </a>
         </Link>
+        <Link legacyBehavior href="#">
+          <a className="text-[18px] text-[#0C71C3]">Uzair graphic & Printing</a>
+        </Link>
+
       </div>
       
       {/* Search Bar */}
@@ -30,7 +34,7 @@ const NavBar = () => {
           <input
             type="text"
             placeholder="Search"
-            className="w-full h-10 pl-10 pr-4 border border-gray-300 rounded-lg focus:outline-none"
+            className="w-[762px] h-10 pl-10 pr-4 border border-gray-300 rounded-lg focus:outline-none"
           />
         </div>
       </div>
