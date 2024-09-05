@@ -119,6 +119,7 @@
 "use client";
 import React, { useState } from 'react';
 import { useRouter } from 'next/navigation';
+import JivoChat from '@/app/Jivochat';
 
 export default function Home() {
   const [searchTerm, setSearchTerm] = useState('');
@@ -238,6 +239,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <JivoChat/>
     </div>
   );
 }

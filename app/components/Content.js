@@ -23,13 +23,13 @@ export default function Content() {
 
   return (
     <div className="container mx-auto px-4">
-    <input
+    {/* <input
       type="text"
       placeholder="Search"
       className="w-full h-10 pl-10 pr-4 border border-gray-300 rounded-lg focus:outline-none mb-6"
       value={searchQuery}
       onChange={handleSearch}
-    />
+    /> */}
     {filteredProducts.map((productCategory, index) => (
       <div key={index} className="mb-10">
         <h2 className="text-2xl font-bold mb-6">{productCategory.category}</h2>

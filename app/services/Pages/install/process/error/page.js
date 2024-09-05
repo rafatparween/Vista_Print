@@ -10,6 +10,8 @@
 //         <div className="absolute bottom-0 left-0 w-full h-24 bg-blue-600" 
 //              style={{ clipPath: 'polygon(0 100%, 100% 100%, 0 0)' }}></div>
 
+import JivoChat from "@/app/Jivochat";
+
 //         {/* Content */}
 //         <div className="p-10">
 //           <h1 className="text-2xl font-semibold mb-4">Installing</h1>
@@ -71,6 +73,7 @@ export default function ErrorPage() {
               />
             
           </div>
+          <JivoChat/>
         </div>
       );
     }
