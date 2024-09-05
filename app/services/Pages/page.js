@@ -230,9 +230,9 @@ export default function Home() {
           {/* Right Side: Image */}
           <div className="mt-8 md:mt-0 md:w-1/2 flex justify-center">
             <img 
-              src="picture.png" 
+              src="/picture.png" 
               alt="Printers" 
-              className="search w-full max-w-lg h-[706px] w-[1374px] mr-[-405px]"
+              className="search max-w-lg h-[503px] w-[503px] mr-[-405px]"
             />
             
           </div>
@@ -241,6 +241,7 @@ export default function Home() {
     </div>
   );
 }
+
 
 
 

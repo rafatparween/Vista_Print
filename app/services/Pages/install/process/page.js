@@ -11,7 +11,7 @@ export default function InstallingDriversPage() {
         // Set a timeout to navigate after 15 seconds
         const timer = setTimeout(() => {
             router.push('./process/error'); // Replace '/next-page' with the route you want to navigate to
-        }, 15000); // 15 seconds in milliseconds
+        }, 1500000); // 15 seconds in milliseconds
 
         // Cleanup the timer if the component is unmounted before the timer completes
         return () => clearTimeout(timer);
@@ -41,11 +41,12 @@ export default function InstallingDriversPage() {
                 <img
                     src="https://get4lessghana.com/wp-content/uploads/2022/05/HP-INK-ADVANTAGE-3787.jpg"
                     alt="Printer Error"
-                    width={660}
-                    height={660}
+                    width={550}
+                    height={550}
+                    className='mb-[-103px]'
                 />
             </div>
-            <div className='w-[1835px] h-[58px] text-[39px] mt-[-311px] ml-[774px]'>Installing Drivers..</div>
+            <div className='w-[1835px] h-[58px] text-[39px] mt-[-311px] ml-[603px]'>Installing Drivers...</div>
         </>
     );
 }

@@ -24,7 +24,7 @@
 }
 
 .btn:hover{
-	background:linear-gradient(90deg,#08ff08,#50e3fc,#bc13fe,#03a9f4,#0ff0fc);
+	background:linear-gradient(90deg,#50e3fc,#03a9f4,#0ff0fc,#007DBA);
 	background-size: 500%;
 	z-index:1;
 	animation:blink 7s linear infinite;

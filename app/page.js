@@ -2,17 +2,20 @@
 import Header from "./components/Header";
 import Slider from "./components/Slider";
 import Content from "./components/Content"
-
-function Home(){
-  return(
+import NavBar from "./components/Navbar";
+import Footer from "./components/Footer";
+function Home() {
+  return (
     <>
-  
-        
-        <Slider/>
-        <Header/>
-        <Content/>
-        
-    
+
+      <NavBar />
+
+      <Slider />
+      <Header />
+      <Content />
+      <Footer />
+
+
     </>
 
   )
