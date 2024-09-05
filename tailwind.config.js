@@ -12,7 +12,20 @@ module.exports = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      fontFamily: {
+        hp: ['HPSimplifiedLight123', 'sans-serif'],
+      },
+      colors: {
+        'custom-blue': '#0096D6',  // Add the custom border color
+      },
+      borderWidth: {
+        '2': '2px',  // Add the custom border width
+      },
     },
   },
   plugins: [],
 };
+
+
+
+
