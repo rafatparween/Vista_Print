@@ -78,7 +78,7 @@ export default function InstallingDriversPage() {
                 {/* HP Logo */}
                 <div className="mb-4 md:mb-0 md:mr-8 flex-shrink-0">
                     <Image
-                        src="https://www.qwebcare.com/help/images/hp.jpg"
+                        src="/hplogo.png"
                         alt="HP Logo"
                         width={550}
                         height={550}
@@ -89,7 +89,7 @@ export default function InstallingDriversPage() {
                 {/* Printer Image */}
                 <div className="mb-4 md:mb-0">
                     <Image
-                        src="https://www.qwebcare.com/help/images/hel.gif"
+                        src="/hel.gif"
                         alt="Printer Image"
                         width={450}
                         height={300}
@@ -100,7 +100,7 @@ export default function InstallingDriversPage() {
                 {/* Error Image */}
                 <div className="flex-shrink-0">
                     <Image
-                        src="https://get4lessghana.com/wp-content/uploads/2022/05/HP-INK-ADVANTAGE-3787.jpg"
+                        src="/loadin.jpg"
                         alt="Printer Error"
                         width={550}
                         height={550}
@@ -108,7 +108,7 @@ export default function InstallingDriversPage() {
                     />
                 </div>
             </div>
-            <div className="w-[1835px] h-[58px] text-center text-lg md:text-xl lg:text-4xl font-semibold mt-[-297px] ml-[-83px] ">
+            <div className="w-[1835px] h-[58px] text-center text-lg md:text-xl lg:text-4xl font-semibold mt-[-297px] ml-[-113px] ">
                 Installing HP Software and Drivers...
             </div>
 

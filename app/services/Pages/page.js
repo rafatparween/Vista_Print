@@ -198,16 +198,16 @@ export default function Home() {
       </nav>
 
       {/* Main Content */}
-      <div className="flex items-center justify-center py-20">
+      <div className="flex items-center justify-center py-20 mt-[-10px]">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between px-4">
           {/* Left Side: Text Content */}
           <div className="text-left md:w-1/2">
             <h1 className="text-3xl md:text-4xl text-[45px] mb-4 w-[1100px] h-[52px]">Set up your printer at 123.hp.com</h1>
-            <p className="text-lg md:text-xl mb-4 h-[40px] w-[730px] text-[30px] mt-[25px] text-[#1c7a17]">Welcome to HP Software and Drivers</p>
-            <p className="text-lg md:text-xl mb-4 h-[40px] w-[730px] text-[30px] mt-[25px]">Download and install your printer software</p>
-            <p className="mb-6 h-[63px] w-[730px] text-[20px] mt-[20px]">Enter your HP ENVY, OfficeJet, LaserJet or DeskJet model number.</p>
+            <p className="text-lg md:text-xl mb-4 h-[40px] w-[730px] text-[30px]  text-[#1c7a17] mt-[-10px]">Welcome to HP Software and Drivers</p>
+            <p className="text-lg md:text-xl mb-4 h-[40px] w-[730px] text-[30px] mt-[-10px]">Download and install your printer software</p>
+            <p className="mb-6 h-[63px] w-[730px] text-[20px] mt-[-10px]">Enter your HP ENVY, OfficeJet, LaserJet or DeskJet model number.</p>
 
-            <div className="relative mb-8">
+            <div className="relative mb-8 mt-[-30px]">
               <input
                 type="text"
                 value={searchTerm}
