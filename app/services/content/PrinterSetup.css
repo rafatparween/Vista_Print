@@ -2,6 +2,7 @@ html,
 body {
     margin: 0;
     padding: 0;
+    box-sizing: border-b0x;
 }
 
 
@@ -15,6 +16,8 @@ div {
     display: flex;
     align-items: center;
     height: 564.47px;
+    overflow: hidden;
+    flex-direction: column;
 }
 
 .text-content {
@@ -35,7 +38,7 @@ div {
     flex: 1;
 }
 .select{
-    width: 643px;
+    max-width: 643px;
 }
 
 .printer-setup li {
@@ -61,167 +64,106 @@ div {
     width: 20px;
     height: 20px;
     display: block;
+    object-fit: cover;
 }
 
 
 
 .printer-image {
-    width: 579px;
-    height: 549px;
+    width: 703px;
+    height: 703px;
     padding: 91.1875px;
     margin-bottom: 30px;
     margin-left: 459px;
+    object-fit: cover;
+
 }
 
-/* Mobile devices (up to 576px) */
-@media only screen and (max-width: 576px) {
-    .printer-setup {
-        flex-direction: column;
-        /* Stack elements vertically */
-        align-items: center;
-        /* Center elements */
-        height: auto;
-        /* Allow content to define height */
-        padding: 20px;
-        /* Add padding around the content */
-    }
 
+@media (max-width: 576px) {
     .text-content {
-        padding: 10px;
-        /* Reduce padding for mobile */
-        margin: 0 auto;
-        /* Center the text */
         font-size: 1rem;
-        /* Smaller font size for readability */
-        margin-bottom: 20px;
-        /* Adjust margin for spacing */
-        text-align: center;
-        /* Center text for mobile view */
-        width: 90%;
-        /* Limit the width to ensure better fit */
+        padding: 10px;
     }
 
     .printer-image {
-        width: 100%;
-        /* Full width for the image */
-        max-width: 300px;
-        /* Limit the max width */
-        height: auto;
-        /* Maintain aspect ratio */
-        padding: 0;
-        /* Remove padding to fit the screen */
-        margin: 20px auto;
-        /* Center the image */
+        max-width: 300px; /* Adjust max-width for smaller screens */
+        margin: 20px 0;
     }
 
-    .btn{
+    .btn {
         font-size: 1rem;
-        /* Adjust button font size */
         padding: 10px 20px;
-        /* Adjust button padding */
-        margin: 20px auto;
-        /* Center the button */
-        display: block;
-        /* Ensure it spans full width */
-        width: 90%;
-        /* Limit width to fit the screen */
+        width: 100%;
+        max-width: 200px; /* Ensure button width is reasonable */
+        margin: 20px 0;
     }
 }
 
 /* Landscape phones and small tablets (up to 768px) */
-@media only screen and (max-width: 768px) {
-    .printer-setup {
-        flex-direction: column;
-        /* Stack elements vertically */
-        align-items: center;
-        /* Center elements */
-        padding: 30px;
-        /* Add padding */
-    }
-
+@media (max-width: 768px) {
     .text-content {
-        padding: 20px;
-        /* Adjust padding */
-        margin: 0 auto;
-        /* Center text */
         font-size: 1.2rem;
-        /* Adjust font size */
-        text-align: center;
-        /* Center text */
-        width: 80%;
-        /* Ensure it fits within the screen */
+        padding: 20px;
     }
 
     .printer-image {
-        width: 80%;
-        /* Scale image to fit within screen */
-        max-width: 400px;
-        /* Limit max width */
-        height: auto;
-        /* Maintain aspect ratio */
-        padding: 0;
-        /* Remove padding */
-        margin: 20px auto;
-        /* Center the image */
+        max-width: 300px; /* Adjust max-width for medium screens */
+        margin: 20px 0;
     }
 
     .btn {
         font-size: 1.1rem;
-        /* Slightly larger font */
         padding: 12px 24px;
-        /* Adjust padding */
-        width: 80%;
-        /* Limit width to fit screen */
-        margin: 20px auto;
-        /* Center the button */
+        width: 100%;
+        max-width: 250px; /* Ensure button width fits well */
+        margin: 20px 0;
     }
 }
 
 /* Tablets (up to 1024px) */
-@media only screen and (max-width: 1024px) {
-    .printer-setup {
-        flex-direction: column;
-        /* Stack vertically on smaller screens */
-        align-items: center;
-        /* Center content */
-        padding: 40px;
-        /* Add padding */
-    }
-
+@media (max-width: 1024px) {
     .text-content {
-        padding: 30px;
-        /* Adjust padding */
-        margin: 0 auto;
-        /* Center text */
         font-size: 1.5rem;
-        /* Adjust font size */
-        text-align: center;
-        /* Center text */
-        width: 70%;
-        /* Limit width */
+        padding: 30px;
     }
 
     .printer-image {
-        width: 70%;
-        /* Adjust image width */
-        max-width: 500px;
-        /* Limit max width */
-        height: auto;
-        /* Maintain aspect ratio */
-        padding: 0;
-        /* Remove padding */
-        margin: 30px auto;
-        /* Center image */
+        max-width: 500px; /* Adjust max-width for larger screens */
+        margin: 30px 0;
     }
 
     .btn {
         font-size: 1.2rem;
-        /* Adjust button font size */
         padding: 14px 28px;
-        /* Adjust padding */
-        width: 70%;
-        /* Limit width */
-        margin: 30px auto;
-        /* Center button */
+        width: 100%;
+        max-width: 300px; /* Ensure button width fits well */
+        margin: 30px 0;
+    }
+}
+
+/* Large screens (desktops, 1280px and up) */
+@media (min-width: 1280px) {
+    .printer-setup {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 40px 80px;
+    }
+
+    .text-content {
+        font-size: 1.8rem;
+        width: 50%; /* Ensure the text content has adequate space */
+    }
+
+    .printer-image {
+        max-width: 669px; /* Ensure image doesn't exceed container width */
+        height: auto; /* Maintain aspect ratio */
+        margin: 0; /* Remove unnecessary margins */
+    }
+
+    .btn {
+        font-size: 1.2rem;
+        padding: 12px 24px;
+        max-width: none; /* Remove width restriction */
     }
 }

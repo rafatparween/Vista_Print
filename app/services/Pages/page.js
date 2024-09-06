@@ -115,8 +115,10 @@
 // }
 
 
-
 "use client";
+// import './search.css';
+import Image from 'next/image';
+
 import React, { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import JivoChat from '@/app/Jivochat';
@@ -193,8 +195,8 @@ export default function Home() {
                 type="text"
                 value={searchTerm}
                 onChange={handleSearchChange}
-                placeholder='Enter exact model number or name. Ex: "ENVY 4520"'
-                className="border border-gray-300 p-3 rounded-l-lg w-full max-w-md"
+                placeholder='Enter exact model number or name. Ex: ENVY 4520'
+                className="border border-gray-300 p-3 rounded-l-lg w-[394px] max-w-md"
               />
               <button
                 onClick={handleSearchClick}
@@ -230,10 +232,12 @@ export default function Home() {
 
           {/* Right Side: Image */}
           <div className="mt-8 md:mt-0 md:w-1/2 flex justify-center">
-            <img 
+            <Image 
               src="/picture.png" 
               alt="Printers" 
-              className="search max-w-lg h-[503px] w-[503px] mr-[-405px]"
+              height={430}
+              width={430}
+              className="max-w-lg  mr-[-405px] object-cover"
             />
             
           </div>
@@ -243,6 +247,17 @@ export default function Home() {
     </div>
   );
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 

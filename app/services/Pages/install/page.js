@@ -1,12 +1,13 @@
 import React from 'react';
 import Link from 'next/link';
 <link href="https://fonts.googleapis.com/css2?family=FontName:wght@weight&display=swap" rel="stylesheet" />
+import Image from 'next/image';
 
 export default function Home() {
   return (
     <>
-      <div className="h-[900px] flex items-center justify-center bg-[#ececec]">
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between px-4">
+      <div className="h-[700px] flex items-center justify-center bg-[#ececec]">
+        <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between px-4 ml-[347px] mt-[-300px]]">
           {/* Left Side: Text Content */}
           <div className="text-left md:w-1/2 flex flex-col justify-center mb-[263px] mt-[63px] ml-[-288px]">
             <h1 className="text-[50px] h-[58px] w-[1100px] mb-[30px] font-hp">
@@ -24,11 +25,13 @@ export default function Home() {
           </div>
 
           {/* Right Side: Image */}
-          <div className="md:w-1/12 flex justify-center mt-8 md:mt-0">
-            <img
-              src="https://www.qwebcare.com/help/images/Win10_Image_mid.png"
+          {/* <div className="md:w-1/12 flex justify-center mt-8 md:mt-0"> */}
+            <Image
+              src="/laptipsetup.png"
               alt="Printers"
-              className="w-full max-w-lg h-[367px] w-[569px] ml-[-357px] mb-[-109px] mr-[-397pxpx]"
+              width={600} // Provide a specific width
+              height={600} 
+              className="max-w-l ml-[-357px] mb-[-109px] mr-[-397pxpx]"
             />
             {/* <img 
               src="/printer.png" 
@@ -38,7 +41,7 @@ export default function Home() {
           </div>
         </div>
 
-      </div>
+      
       <div className='h-[100px] bg-gray-200'></div>
 
     </>

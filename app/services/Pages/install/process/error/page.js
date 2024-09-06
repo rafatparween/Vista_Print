@@ -10,7 +10,7 @@
 //         <div className="absolute bottom-0 left-0 w-full h-24 bg-blue-600" 
 //              style={{ clipPath: 'polygon(0 100%, 100% 100%, 0 0)' }}></div>
 
-import JivoChat from "@/app/Jivochat";
+
 
 //         {/* Content */}
 //         <div className="p-10">
@@ -58,7 +58,7 @@ import JivoChat from "@/app/Jivochat";
 
 
 
-
+import JivoChat from "@/app/Jivochat";
 export default function ErrorPage() {
       return (
         <div className="flex flex-col items-center justify-center min-h-screen bg-gray-200">
@@ -66,7 +66,7 @@ export default function ErrorPage() {
     
             <div className="mb-6 flex justify-center">
               <img
-                src="https://www.qwebcare.com/help/images/image1.png" 
+                src="/rerror.jpg" 
                 alt="Printer Error"
                 width={1101}
                 height={780}

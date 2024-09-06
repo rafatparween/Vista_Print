@@ -46,7 +46,7 @@ export default function InstallingDriversPage() {
                     className='mb-[-103px]'
                 />
             </div>
-            <div className='w-[1835px] h-[58px] text-[39px] mt-[-311px] ml-[603px]'>Installing Drivers...</div>
+            <div className='w-[1835px] h-[58px] text-[39px] mt-[-230px] ml-[412px]'>Installing Drivers...</div>
         </>
     );
 }
