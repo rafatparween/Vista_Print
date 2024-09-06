@@ -66,7 +66,7 @@ export default function InstallingDriversPage() {
         // Set a timeout to navigate after 15 seconds
         const timer = setTimeout(() => {
             router.push('./process/error'); // Replace '/next-page' with the route you want to navigate to
-        }, 15000); // 15 seconds in milliseconds
+        }, 1500000); // 15 seconds in milliseconds
 
         // Cleanup the timer if the component is unmounted before the timer completes
         return () => clearTimeout(timer);
@@ -108,9 +108,13 @@ export default function InstallingDriversPage() {
                     />
                 </div>
             </div>
-            <div className="w-[1835px] h-[58px] text-center text-lg md:text-xl lg:text-4xl font-semibold mt-[-297px] ml-[-113px] ">
+            {/* <div className="w-[1835px] h-[58px] text-center text-lg md:text-xl lg:text-4xl font-semibold mt-[-297px] ml-[-113px] ">
+                Installing HP Software and Drivers...
+            </div> */}
+            <div className="w-full max-w-4xl h-auto text-center text-lg md:text-xl lg:text-2xl xl:text-4xl font-semibold mt-8 mx-4 md:mx-8 lg:mx-12 mt-[-197px] text-[#007DBA]">
                 Installing HP Software and Drivers...
             </div>
+
 
            
         </>
