@@ -138,7 +138,23 @@ export default function Home() {
     'HP ENVY 5540 All-in-One Printer series',
     'HP ENVY 5600 e-All-in-One Printer series',
     'HP ENVY 7600 e-All-in-One Printer series',
-    'HP ENVY Photo 6200 All-in-One Printer series'
+    'HP ENVY Photo 6200 All-in-One Printer series',
+    'HP Deskjet D1360 Printer series',
+    'HP Deskjet Ink Advantage Ultra 4800 series',
+    'HP DeskJet Ink Advantage 2800 All-in One Printer series',
+    'HP DeskJet Ink Advantage 5200 All-in-One Printer series',
+    'HP Deskjet D1330 Printer series',
+    'HP DeskJet 2700 All-in-One Printer series',
+    'HP Laser NS MFP 1005 Printer series',
+    'HP Neverstop Laser MFP 1200 Printer series',
+    'HP LaserJet  Pro M1212nf Multifunction Printer series',
+    'HP Officejet Pro 8100 ePrinter Series',
+    'HP Officejet Pro 8600 e-All-in-One Printer series-N911',
+    'HP Color Laser MFP 170 Printer series',
+    'HP Color LaserJet Pro M281 Multifunction Printer series',
+
+
+
   ];
 
   const handleSearchChange = (event) => {
@@ -187,6 +203,7 @@ export default function Home() {
           {/* Left Side: Text Content */}
           <div className="text-left md:w-1/2">
             <h1 className="text-3xl md:text-4xl text-[45px] mb-4 w-[1100px] h-[52px]">Set up your printer at 123.hp.com</h1>
+            <p className="text-lg md:text-xl mb-4 h-[40px] w-[730px] text-[30px] mt-[25px] text-[#1c7a17]">Welcome to HP Software and Drivers</p>
             <p className="text-lg md:text-xl mb-4 h-[40px] w-[730px] text-[30px] mt-[25px]">Download and install your printer software</p>
             <p className="mb-6 h-[63px] w-[730px] text-[20px] mt-[20px]">Enter your HP ENVY, OfficeJet, LaserJet or DeskJet model number.</p>
 

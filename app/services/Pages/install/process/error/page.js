@@ -57,7 +57,7 @@
 // 
 
 
-
+import Image from "next/image";
 import JivoChat from "@/app/Jivochat";
 export default function ErrorPage() {
       return (
@@ -65,11 +65,11 @@ export default function ErrorPage() {
           
     
             <div className="mb-6 flex justify-center">
-              <img
+              <Image
                 src="/rerror.jpg" 
                 alt="Printer Error"
-                width={1101}
-                height={780}
+                width={892}
+                height={632}
               />
             
           </div>

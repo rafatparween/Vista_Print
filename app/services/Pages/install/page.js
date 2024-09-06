@@ -6,10 +6,10 @@ import Image from 'next/image';
 export default function Home() {
   return (
     <>
-      <div className="h-[700px] flex items-center justify-center bg-[#ececec]">
+      <div className="h-[800px] flex items-center justify-center">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between px-4 ml-[347px] mt-[-300px]]">
           {/* Left Side: Text Content */}
-          <div className="text-left md:w-1/2 flex flex-col justify-center mb-[263px] mt-[63px] ml-[-288px]">
+          <div className="text-left md:w-1/2 flex flex-col justify-center mb-[263px] mt-[63px] ml-[-109px]">
             <h1 className="text-[50px] h-[58px] w-[1100px] mb-[30px] font-hp">
               Easy setup, effortless printing!
             </h1>
@@ -42,8 +42,13 @@ export default function Home() {
         </div>
 
       
-      <div className='h-[100px] bg-gray-200'></div>
+      <div className='h-[165px] bg-gray-200'></div>
 
     </>
   );
 }
+
+
+
+
+
