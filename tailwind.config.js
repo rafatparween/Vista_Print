@@ -22,7 +22,7 @@ module.exports = {
         '2': '2px',  // Add the custom border width
       },
       screens: {
-        'sm': '640px',
+        'sm': '360px',
         'md': '768px',
         'lg': '1024px',
         'xl': '1280px',
