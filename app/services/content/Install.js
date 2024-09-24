@@ -1,3 +1,4 @@
+import JivoChat from '@/app/Jivochat';
 import React from 'react';
 
 export default function Home() {
@@ -20,6 +21,7 @@ export default function Home() {
           />
         </div>
       </div>
+      <JivoChat/>
     </div>
   );
 }
