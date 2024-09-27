@@ -9,28 +9,10 @@
 // import PrivacyPolicy from './service/PrivacyPolicy';
 
 
+import JivoChat from "../Jivochat";
 import FooterPrinter from "./component/Footer";
 import Navbar from "./component/Navabar";
 import Sliderprinter from "./component/Sliderprinter";
-
-// const App = () => {
-//   return (
-//     <Router>
-//       <Navbar />
-//       <Routes>
-//         <Route path="/" element={<Home />} />
-//         <Route path="/printeroffline" element={<PrinterOffline />} />
-//         <Route path="/printersetupissue" element={<PrinterSetup />} />
-//         <Route path="/printerscannersetup" element={<ScannerSetup />} />
-//         <Route path="/privacypolicy" element={<PrivacyPolicy />} />
-//       </Routes>
-//       <Footer />
-//     </Router>
-//   );
-// };
-
-// export default App;
-
 
 function Home(){
     return(
@@ -38,6 +20,7 @@ function Home(){
             <Navbar/>
             <Sliderprinter/>
             <FooterPrinter/>
+            <JivoChat/>
         </>
     )
 }

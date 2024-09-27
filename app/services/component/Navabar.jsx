@@ -13,7 +13,7 @@ const Navbar = () => {
         </Link> */}
 
         <ul className="flex gap-8 text-white">
-          <Link href="/" className="hover:border border-[#3730a3] p-2 rounded">
+          <Link href="/services/" className="hover:border border-[#3730a3] p-2 rounded">
             Home
           </Link>
           <Link
