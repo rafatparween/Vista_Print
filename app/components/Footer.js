@@ -8,9 +8,9 @@ const Footer = () => {
         <footer className="text-white py-20 bg-gray-800 h-[400px] pt-[14px]">
             <div className="container mx-auto px-20 lg:px-20 py-20 flex flex-col gap-10 md:flex-row justify-between border-t border-slate-800">
                 <div className="flex">
-                    <p className="font-bold text-center">
+                    <div className="font-bold text-center">
                         <h1 className="text-[32px] mt-[89px]">Uzair graphic & Printing</h1>
-                    </p>
+                    </div>
                 </div>
 
                 <div>
