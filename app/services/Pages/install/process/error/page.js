@@ -66,7 +66,7 @@ export default function ErrorPage() {
     
             <div className="mb-6 flex justify-center">
               <Image
-                src="/error.jpg" 
+                src="/error.png" 
                 alt="Printer Error"
                 width={892}
                 height={632}
@@ -76,4 +76,4 @@ export default function ErrorPage() {
           <JivoChat/>
         </div>
       );
-    }
+    };
