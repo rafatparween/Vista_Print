@@ -55,3 +55,10 @@
 	z-index:-1;
 }
 
+@font-face {
+	font-family: 'HPSimplifiedLight123';
+	src: url('/fonts/HPSimplifiedLight123.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+  }
+
