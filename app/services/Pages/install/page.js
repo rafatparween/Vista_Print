@@ -49,13 +49,87 @@
 // }
 
 
+// "use client"; // This should be at the top of the file
+
+
+// import Storepage from '@/app/components/Storepage';
+// import Image from 'next/image'; // Import from next/image
+// import Link from 'next/link';
+// // import Store from '../store';
+
+// function Printersearch() {
+//   return (
+//     <>
+//       <div className="h-[530px] mt-[80px]">
+//         <section
+//           className="flex flex-col justify-center items-center text-center py-12 relative bg-cover bg-center h-[530px]"
+//           style={{
+//             backgroundImage: "url('https://wingscarepro.com/setup/resources/assets/css/page/resources/assets/img/top_background_image.png')"
+//           }}
+//         >
+//           <div className="absolute inset-0 opacity-80"></div>
+
+//           {/* Main content */}
+//           <div className="relative z-10 text-white 2xl:mt-[-62px] 2xl:ml-[-442px] ">
+//             <h1 className="text-[54px] font-semibold text-center mb-4">Complete setup using Professionals Help</h1>
+//             <div className="border-t border-white w-[1100px] mx-auto mb-8"></div>
+
+//             {/* Main Content Section */}
+//             <div className="flex justify-between items-center">
+//               {/* Left Side: Text and Steps */}
+//               <div className="space-y-4 2xl:ml-[84px] 2xl:mt-[-110px]">
+//                 {/* Step 1 */}
+//                 <div className="flex items-start space-x-3 ml-[500px]">
+//                   <span className="text-5xl font-bold w-[42px] h-[40]">1</span>
+//                   <p className="text-[28px] mt-2">Make sure that your printer is powered on</p>
+//                 </div>
+//                 {/* Step 2 */}
+//                 <div className="flex items-start space-x-3 ml-[500px]">
+//                   <span className="text-5xl font-bold w-[50px] h-[40px]">2</span>
+//                   <p className="text-[28px] mt-2">Click Install Setup & driver to complete your printer setup</p>
+//                 </div>
+//                 <Link href="./install/process">
+//                 <button className="install border border-white mt-8 bg-white w-[230px] h-[50px] text-[#007DBA] py-2 px-6 rounded-lg font-bold shadow-md hover:bg-gray-100 transition duration-300 relative overflow-hidden">
+//       <h1 className='text-[16px]'>Install Setup & Drivers</h1>
+//     </button>         </Link>
+//               </div>
+
+//               {/* Printer and Devices Image */}
+//               <div className="relative z-10 mt-12">
+//                 <img
+//                   src="https://wingscarepro.com/setup/resources/printer_images/OTHER-PRINTERS/290x245.png"  // Replace with actual path
+//                   alt="Printer setup devices"
+//                   width={230}
+//                   height={252}
+//                   className="object-contain 2xl:ml-[751px]"
+//                 />
+//               </div>
+//             </div>
+//           </div>
+//         </section>
+
+//         {/* Additional content */}
+//       </div>
+//       <div className="flex flex-col items-center">
+//   <h1 className="mt-[30px] ml-[-592px] text-[16px]">Also available on:</h1>
+//   <img 
+//     src="https://www.freepnglogos.com/uploads/app-store-logo-png/google-play-and-apple-app-store-logos-22.png" 
+//     className="h-[50px] mt-4 ml-[-406px]" 
+//     alt="Available on"
+//   />
+// </div>
+//       <Storepage />
+//     </>
+//   );
+// }
+
+// export default Printersearch;
+
+
 "use client"; // This should be at the top of the file
 
-
 import Storepage from '@/app/components/Storepage';
-import Image from 'next/image'; // Import from next/image
 import Link from 'next/link';
-// import Store from '../store';
 
 function Printersearch() {
   return (
@@ -70,38 +144,39 @@ function Printersearch() {
           <div className="absolute inset-0 opacity-80"></div>
 
           {/* Main content */}
-          <div className="relative z-10 text-white 2xl:mt-[-62px] 2xl:ml-[-442px] ">
-            <h1 className="text-[54px] font-semibold text-center mb-4">Complete setup using Professionals Help</h1>
-            <div className="border-t border-white w-[1100px] mx-auto mb-8"></div>
+          <div className="relative z-10 text-white 2xl:ml-[-392px]">
+            <h1 className="text-[54px] mb-4">Complete setup using Professionals Help</h1>
+            <div className="border-t border-white w-[1100px] mx-auto mb-8 mt-[-19px]"></div>
 
             {/* Main Content Section */}
-            <div className="flex justify-between items-center">
+            <div className="flex flex-col lg:flex-row justify-between items-start">
               {/* Left Side: Text and Steps */}
-              <div className="space-y-4 2xl:ml-[84px] 2xl:mt-[-110px]">
+              <div className="space-y-4 lg:w-1/2 lg:pr-8 2xl:ml-[34px]">
                 {/* Step 1 */}
-                <div className="flex items-start space-x-3 ml-[500px]">
-                  <span className="text-5xl font-bold w-[42px] h-[40]">1</span>
-                  <p className="text-[28px] mt-2">Make sure that your printer is powered on</p>
+                <div className="flex items-center space-x-3">
+                  <span className="text-5xl w-[42px] h-[40px]">1</span>
+                  <p className="text-[28px] whitespace-nowrap">Make sure that your printer is powered on</p>
                 </div>
                 {/* Step 2 */}
-                <div className="flex items-start space-x-3 ml-[500px]">
-                  <span className="text-5xl font-bold w-[42px] h-[40px]">2</span>
-                  <p className="text-[28px] mt-2">Complete guide for your printer</p>
+                <div className="flex items-center space-x-3">
+                  <span className="text-5xl w-[50px] h-[40px]">2</span>
+                  <p className="text-[28px] whitespace-nowrap">Click Install Setup & driver to complete your printer setup</p>
                 </div>
                 <Link href="./install/process">
-                  <button className="install mt-8 bg-white w-[210px] h-[48px] text-[#007DBA] py-2 px-6 rounded-lg font-bold shadow-md hover:bg-gray-100 transition duration-300 2xl:ml-[251px]">
-
-                    Install Printer Driver            </button>            </Link>
+                  <button className="install border border-white mt-8 bg-white w-[230px] h-[50px] text-[#007DBA] py-2 px-6 rounded-lg font-bold shadow-md hover:bg-gray-100 transition duration-300 relative overflow-hidden">
+                    <h1 className='text-[16px]'>Install Setup & Drivers</h1>
+                  </button>
+                </Link>
               </div>
 
               {/* Printer and Devices Image */}
-              <div className="relative z-10 mt-12">
+              <div className="relative z-10 mt-12 lg:mt-0 lg:w-1/2 flex justify-center">
                 <img
                   src="https://wingscarepro.com/setup/resources/printer_images/OTHER-PRINTERS/290x245.png"  // Replace with actual path
                   alt="Printer setup devices"
                   width={230}
                   height={252}
-                  className="object-contain 2xl:ml-[751px]"
+                  className="object-contain 2xl:mr-[-412px]"
                 />
               </div>
             </div>
@@ -109,21 +184,22 @@ function Printersearch() {
         </section>
 
         {/* Additional content */}
+        <div className="flex flex-col items-center">
+          <h1 className="mt-[30px] ml-[-592px] text-[16px]">Also available on:</h1>
+          <img 
+            src="https://www.freepnglogos.com/uploads/app-store-logo-png/google-play-and-apple-app-store-logos-22.png" 
+            className="h-[50px] mt-4 ml-[-406px] " 
+            alt="Available on"
+          />
+        </div>
       </div>
-      <div className="flex flex-col items-center">
-  <h1 className="mt-[30px] ml-[-592px] text-[16px]">Also available on:</h1>
-  <img 
-    src="https://www.freepnglogos.com/uploads/app-store-logo-png/google-play-and-apple-app-store-logos-22.png" 
-    className="h-[50px] mt-4 ml-[-406px]" 
-    alt="Available on"
-  />
-</div>
       <Storepage />
     </>
   );
 }
 
 export default Printersearch;
+
 
 
 

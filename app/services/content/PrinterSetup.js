@@ -17,7 +17,7 @@ const PrinterSetup = () => {
         <h1>123 PRINTER SETUP</h1>
         <ul>
           <li>Make sure your printer is powered on</li>
-          <li className='select'>Select Download to install the recommended printer software to complete setup</li>
+          <li className='select'>Click Printer Setup for step by step guidance on how to setup, configure and register your printer.</li>
         </ul>
         <button className="btn" onClick={handleSetupClick}>
           Click Here for Setup

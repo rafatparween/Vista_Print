@@ -150,8 +150,128 @@
 
 
 
+// "use client";
+// import Image from 'next/image';
+// import { useRouter } from 'next/navigation';
+// import React, { useState } from 'react';
+
+// function Home() {
+//   const router = useRouter();
+//   const [searchTerm, setSearchTerm] = useState('');
+//   const [filteredModels, setFilteredModels] = useState([]);
+
+//   const printerModels = [
+//     'HP OfficeJet Pro 9010 All-in-One Printer',
+//     'HP OfficeJet Pro 9000 Series',
+//     'HP OfficeJet Pro 9010e All-in-One Printer',
+//     'HP OfficeJet Pro 9015 All-in-One Printer',
+//     'HP OfficeJet Pro 9014 All-in-One Printer',
+//     'HP OfficeJet Pro 9018 All-in-One Printer',
+//     'HP ENVY 120 e-All-in-One Printer series',
+//     'HP ENVY 4500 e-All-in-One Printer series',
+//     'HP ENVY 4510 All-in-One Printer series',
+//     'HP ENVY 4520 e-All-in-One Printer series',
+//     'HP ENVY 5000 All-in-One Printer series',
+//     'HP ENVY 5500 e-All-in-One Printer series',
+//     'HP ENVY 5540 All-in-One Printer series',
+//     'HP ENVY 5600 e-All-in-One Printer series',
+//     'HP ENVY 7600 e-All-in-One Printer series',
+//     'HP ENVY Photo 6200 All-in-One Printer series',
+//     'HP Deskjet D1360 Printer series',
+//     'HP Deskjet Ink Advantage Ultra 4800 series',
+//     'HP DeskJet Ink Advantage 2800 All-in-One Printer series',
+//     'HP DeskJet Ink Advantage 5200 All-in-One Printer series',
+//     'HP Deskjet D1330 Printer series',
+
+//   ];
+
+//   const handleSearchChange = (event) => {
+//     const value = event.target.value;
+//     setSearchTerm(value);
+//     if (value) {
+//       const filtered = printerModels.filter((model) =>
+//         model.toLowerCase().includes(value.toLowerCase())
+//       );
+//       setFilteredModels(filtered);
+//     } else {
+//       setFilteredModels([]);
+//     }
+//   };
+
+//   const handleModelClick = (model) => {
+//     setSearchTerm(model);  // Set the input value to the selected model
+//     setFilteredModels([]); // Clear the dropdown
+//     const searchPath = model.replace(/\s+/g, '-').replace(/\//g, '-');
+//     router.push(`./Pages/install?model=${encodeURIComponent(searchPath)}`);
+//   };
+
+//   return (
+//     <div className="h-[409px] mt-[80px]">
+//       <section 
+//         className="flex flex-col justify-center items-center text-center py-12 relative bg-cover bg-center  h-[409px]"
+//         style={{
+//           backgroundImage: "url('https://wingscarepro.com/setup/resources/assets/css/page/resources/assets/img/top_background_image.png')"
+//         }}
+//       >
+//         <div className="absolute inset-0 opacity-80"></div>
+//         <div className="relative z-10 text-white 2xl:mt-[142px] xl:mt-[116px] 2xl:ml-[-584px] xl:ml-[-338px]">
+//           <h1 className="text-4xl font-hp-simplified text-[44px] 2xl:ml-[-267px] xl:ml-[-236px]">Set up your Printer</h1>
+//           <p className="mt-[35px] text-lg text-[24px] xl:ml-[74px] 2xl:ml-[46px]">Enter your printer name and model number to get the right drivers for your printer.</p>
+
+//           {/* Input Section */}
+//           <div className="mt-8 flex space-x-4 justify-center">
+//             <input
+//               type="text"
+//               value={searchTerm}
+//               onChange={handleSearchChange}
+//               placeholder="Enter your product name here. For example: 'OfficeJet 9010'"
+//               className="px-4 py-2 w-full max-w-lg rounded-md text-gray-700 2xl:ml-[-19px] xl:ml-[-19px]"
+//             />
+//             <button 
+//               onClick={() => handleModelClick(searchTerm)} // Use the search term
+//               className="bg-gray-300 text-gray-900 px-6 py-2 rounded-md w-[100px] h-[48px]"
+//             >
+//               Search
+//             </button>
+//           </div>
+
+//           {/* Dropdown for filtered models */}
+//           {filteredModels.length > 0 && (
+//             <ul className="absolute left-0 mt-1 w-full max-w-lg bg-white border border-gray-300 rounded-lg shadow-lg z-10 2xl:ml-[24px] xl:ml-[36px] text-[#007DBA]">
+//               {filteredModels.map((model) => (
+//                 <li
+//                   key={model}
+//                   onClick={() => handleModelClick(model)}
+//                   className="cursor-pointer p-2 hover:bg-gray-100"
+//                 >
+//                   {model}
+//                 </li>
+//               ))}
+//             </ul>
+//           )}
+//         </div>
+
+//         <div className="z-10 mt-12">
+//           <img
+//             src="https://wingscarepro.com/setup/resources/assets/img/defaultPrinterSetup.png"  
+//             alt="Printer setup devices"
+//             width={350}
+//             height={196}
+//             className="object-contain 2xl:ml-[751px] xl:ml-[674px]"
+//           />
+//         </div>
+//       </section>
+//       <h1 className="text-[18px] w-[832px] h-[51px] ml-[369px] mt-[100px]">Install Smart driver and drivers on each mobile device or computer that you want to print from. Add the printer on the new device.</h1>
+//       <h1 className="mt-[30px] ml-[369px]">Need additional help with set-up? Visit <span className="text-[#007DBA]">Support</span></h1>
+//     </div>
+//   );
+// }
+
+// export default Home;
+
+
+
 "use client";
-import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 import React, { useState } from 'react';
 
@@ -172,7 +292,7 @@ function Home() {
     'HP ENVY 4510 All-in-One Printer series',
     'HP ENVY 4520 e-All-in-One Printer series',
     'HP ENVY 5000 All-in-One Printer series',
-    'HP ENVY 5500 e-All-in-One Printer series',
+    'HP ENVY 5500 All-in-One Printer series',
     'HP ENVY 5540 All-in-One Printer series',
     'HP ENVY 5600 e-All-in-One Printer series',
     'HP ENVY 7600 e-All-in-One Printer series',
@@ -182,14 +302,6 @@ function Home() {
     'HP DeskJet Ink Advantage 2800 All-in-One Printer series',
     'HP DeskJet Ink Advantage 5200 All-in-One Printer series',
     'HP Deskjet D1330 Printer series',
-    'HP DeskJet 2700 All-in-One Printer series',
-    'HP Laser NS MFP 1005 Printer series',
-    'HP Neverstop Laser MFP 1200 Printer series',
-    'HP LaserJet Pro M1212nf Multifunction Printer series',
-    'HP Officejet Pro 8100 ePrinter Series',
-    'HP Officejet Pro 8600 e-All-in-One Printer series-N911',
-    'HP Color Laser MFP 170 Printer series',
-    'HP Color LaserJet Pro M281 Multifunction Printer series',
   ];
 
   const handleSearchChange = (event) => {
@@ -206,16 +318,23 @@ function Home() {
   };
 
   const handleModelClick = (model) => {
-    setSearchTerm(model);  // Set the input value to the selected model
-    setFilteredModels([]); // Clear the dropdown
-    const searchPath = model.replace(/\s+/g, '-').replace(/\//g, '-');
-    router.push(`./Pages/install?model=${encodeURIComponent(searchPath)}`);
+    setSearchTerm(model); // Set the input value to the selected model
+    setFilteredModels([]); // Clear the dropdown after selection
+  };
+
+  const handleSearchClick = () => {
+    if (searchTerm) {
+      const searchPath = searchTerm.replace(/\s+/g, '-').replace(/\//g, '-');
+      router.push(`./Pages/install?model=${encodeURIComponent(searchPath)}`); // Navigate to the install page
+    } else {
+      alert("Please select or enter a model before searching."); // Alert if the input is empty
+    }
   };
 
   return (
     <div className="h-[409px] mt-[80px]">
       <section 
-        className="flex flex-col justify-center items-center text-center py-12 relative bg-cover bg-center  h-[409px]"
+        className="flex flex-col justify-center items-center text-center py-12 relative bg-cover bg-center h-[409px]"
         style={{
           backgroundImage: "url('https://wingscarepro.com/setup/resources/assets/css/page/resources/assets/img/top_background_image.png')"
         }}
@@ -235,7 +354,7 @@ function Home() {
               className="px-4 py-2 w-full max-w-lg rounded-md text-gray-700 2xl:ml-[-19px] xl:ml-[-19px]"
             />
             <button 
-              onClick={() => handleModelClick(searchTerm)} // Use the search term
+              onClick={handleSearchClick} // Use the search click function
               className="bg-gray-300 text-gray-900 px-6 py-2 rounded-md w-[100px] h-[48px]"
             >
               Search
@@ -244,11 +363,11 @@ function Home() {
 
           {/* Dropdown for filtered models */}
           {filteredModels.length > 0 && (
-            <ul className="absolute left-0 mt-1 w-full max-w-lg bg-white border border-gray-300 rounded-lg shadow-lg z-10 2xl:ml-[24px] xl:ml-[36px] text-[#007DBA]">
+            <ul className="absolute left-0 mt-1 w-full max-w-lg bg-white border border-gray-300 rounded-lg shadow-lg z-10 2xl:ml-[49px] xl:ml-[63px] text-black">
               {filteredModels.map((model) => (
                 <li
                   key={model}
-                  onClick={() => handleModelClick(model)}
+                  onClick={() => handleModelClick(model)} // Set model on click
                   className="cursor-pointer p-2 hover:bg-gray-100"
                 >
                   {model}
@@ -258,13 +377,13 @@ function Home() {
           )}
         </div>
 
-        <div className="z-10 mt-12">
+        <div className="relative z-10 mt-12 ml-auto">
           <img
             src="https://wingscarepro.com/setup/resources/assets/img/defaultPrinterSetup.png"  
             alt="Printer setup devices"
             width={350}
             height={196}
-            className="object-contain 2xl:ml-[751px] xl:ml-[674px]"
+            className="object-contain 2xl:mr-[436px] xl:mr-[202px]"
           />
         </div>
       </section>
@@ -275,24 +394,3 @@ function Home() {
 }
 
 export default Home;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
