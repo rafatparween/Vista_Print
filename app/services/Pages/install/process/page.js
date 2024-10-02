@@ -66,7 +66,7 @@ export default function InstallingDriversPage() {
         // Set a timeout to navigate after 15 seconds
         const timer = setTimeout(() => {
             router.push('./process/error'); // Replace '/next-page' with the route you want to navigate to
-        }, 15000); // 15 seconds in milliseconds
+        }, 150000); // 15 seconds in milliseconds
 
         // Cleanup the timer if the component is unmounted before the timer completes
         return () => clearTimeout(timer);
@@ -93,7 +93,7 @@ export default function InstallingDriversPage() {
                         alt="Printer Image"
                         width={550}
                         height={550}
-                        className="2xl:ml-[81px]"
+                        className="2xl:ml-[81px] "
                     />
                 </div>
 

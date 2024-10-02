@@ -154,17 +154,17 @@ function Printersearch() {
               <div className="space-y-4 lg:w-1/2 lg:pr-8 2xl:ml-[34px]">
                 {/* Step 1 */}
                 <div className="flex items-center space-x-3">
-                  <span className="text-5xl w-[42px] h-[40px]">1</span>
-                  <p className="text-[28px] whitespace-nowrap">Make sure that your printer is powered on</p>
+                  <span className="text-[35px] w-[41px] h-[58px]">1.</span>
+                  <p className="text-[34px] whitespace-nowrap">Make sure that your printer is powered on</p>
                 </div>
                 {/* Step 2 */}
                 <div className="flex items-center space-x-3">
-                  <span className="text-5xl w-[50px] h-[40px]">2</span>
-                  <p className="text-[28px] whitespace-nowrap">Click Install Setup & driver to complete your printer setup</p>
+                  <span className="text-[34px] w-[50px] h-[40px]">2.</span>
+                  <p className="text-[34px] whitespace-nowrap 2xl:ml-[5px] 2xl:mt-[9px]">Click Install Setup & driver to complete your printer setup</p>
                 </div>
                 <Link href="./install/process">
-                  <button className="install border border-white mt-8 bg-white w-[230px] h-[50px] text-[#007DBA] py-2 px-6 rounded-lg font-bold shadow-md hover:bg-gray-100 transition duration-300 relative overflow-hidden">
-                    <h1 className='text-[16px]'>Install Setup & Drivers</h1>
+                  <button className="install border border-white mt-8 bg-white w-[230px] h-[50px]  2xl:ml-[-189px] py-2 px-6 rounded-lg font-bold shadow-md hover:bg-gray-100 transition duration-300 relative overflow-hidden">
+                    <h1 className='text-[16px] text-black'>Install Setup & Drivers</h1>
                   </button>
                 </Link>
               </div>
@@ -174,9 +174,9 @@ function Printersearch() {
                 <img
                   src="https://wingscarepro.com/setup/resources/printer_images/OTHER-PRINTERS/290x245.png"  // Replace with actual path
                   alt="Printer setup devices"
-                  width={230}
+                  width={316}
                   height={252}
-                  className="object-contain 2xl:mr-[-412px]"
+                  className="object-contain 2xl:mr-[-1041px]"
                 />
               </div>
             </div>

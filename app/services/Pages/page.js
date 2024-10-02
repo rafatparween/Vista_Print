@@ -383,7 +383,7 @@ function Home() {
             alt="Printer setup devices"
             width={350}
             height={196}
-            className="object-contain 2xl:mr-[436px] xl:mr-[202px]"
+            className="object-contain 2xl:mr-[436px] xl:mr-[202px] 2xl:mr-[187px]"
           />
         </div>
       </section>
