@@ -176,7 +176,7 @@ function Printersearch() {
                   alt="Printer setup devices"
                   width={316}
                   height={252}
-                  className="object-contain 2xl:mr-[-1041px]"
+                  className="object-contain 2xl:mr-[-1041px] "
                 />
               </div>
             </div>

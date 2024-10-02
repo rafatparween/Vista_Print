@@ -340,9 +340,9 @@ function Home() {
         }}
       >
         <div className="absolute inset-0 opacity-80"></div>
-        <div className="relative z-10 text-white 2xl:mt-[142px] xl:mt-[116px] 2xl:ml-[-584px] xl:ml-[-338px]">
-          <h1 className="text-4xl font-hp-simplified text-[44px] 2xl:ml-[-267px] xl:ml-[-236px]">Set up your Printer</h1>
-          <p className="mt-[35px] text-lg text-[24px] xl:ml-[74px] 2xl:ml-[46px]">Enter your printer name and model number to get the right drivers for your printer.</p>
+        <div className="relative z-10 text-white 2xl:mt-[142px] xl:mt-[116px] 2xl:ml-[-825px] xl:ml-[-338px] ">
+          <h1 className="text-4xl font-hp-simplified text-[44px] 2xl:ml-[-290px] xl:ml-[-236px]">Set up HP Printer</h1>
+          <p className="mt-[35px] text-[27px] text-[24px] xl:ml-[74px] 2xl:ml-[406px]">Enter your printer name and model number to get the right drivers for your printer.</p>
 
           {/* Input Section */}
           <div className="mt-8 flex space-x-4 justify-center">
@@ -351,11 +351,11 @@ function Home() {
               value={searchTerm}
               onChange={handleSearchChange}
               placeholder="Enter your product name here. For example: 'OfficeJet 9010'"
-              className="px-4 py-2 w-full max-w-lg rounded-md text-gray-700 2xl:ml-[-19px] xl:ml-[-19px]"
+              className="px-4 py-2 w-full max-w-lg rounded-md text-gray-700 2xl:ml-[22px] xl:ml-[-19px]"
             />
             <button 
-              onClick={handleSearchClick} // Use the search click function
-              className="bg-gray-300 text-gray-900 px-6 py-2 rounded-md w-[100px] h-[48px]"
+              onClick={handleSearchClick} // Use the search click function  
+              className="bg-gray-300 text-gray-900 rounded-md w-[100px] h-[48px] 2xl:ml-[40px] "
             >
               Search
             </button>
@@ -383,7 +383,7 @@ function Home() {
             alt="Printer setup devices"
             width={350}
             height={196}
-            className="object-contain 2xl:mr-[436px] xl:mr-[202px] 2xl:mr-[187px]"
+            className="object-contain 2xl:mr-[436px] xl:mr-[202px] 2xl:mr-[232px]"
           />
         </div>
       </section>
