@@ -356,6 +356,7 @@ function Home() {
             <button 
               onClick={handleSearchClick} // Use the search click function  
               className="bg-gray-300 text-gray-900 rounded-md w-[100px] h-[48px] 2xl:ml-[40px] "
+              style={{ marginLeft: '41px' }}
             >
               Search
             </button>
