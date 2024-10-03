@@ -145,8 +145,8 @@ function Printersearch() {
 
           {/* Main content */}
           <div className="relative z-10 text-white 2xl:ml-[-392px]">
-            <h1 className="text-[54px] mb-4">Complete setup using Professionals Help</h1>
-            <div className="border-t border-white w-[1100px] mx-auto mb-8 mt-[-19px]"></div>
+            <h1 className="text-[54px] mb-4 xl:ml-[-247px] 2xl:ml-[5px]">Complete setup using Professionals Help</h1>
+            <div className="border-t border-white w-[1100px] mx-auto mb-8 mt-[-19px] xl:ml-[-4px]"></div>
 
             {/* Main Content Section */}
             <div className="flex flex-col lg:flex-row justify-between items-start">
@@ -163,7 +163,7 @@ function Printersearch() {
                   <p className="text-[34px] whitespace-nowrap 2xl:ml-[5px] 2xl:mt-[9px]">Click Install Setup & driver to complete your printer setup</p>
                 </div>
                 <Link href="./install/process">
-                  <button className="install border border-white mt-8 bg-white w-[230px] h-[50px]  2xl:ml-[-189px] py-2 px-6 rounded-lg font-bold shadow-md hover:bg-gray-100 transition duration-300 relative overflow-hidden">
+                  <button className="install border border-white mt-8 bg-white w-[230px] h-[50px]  2xl:ml-[-189px] xl:ml-[-301px] py-2 px-6 rounded-lg font-bold shadow-md hover:bg-gray-100 transition duration-300 relative overflow-hidden">
                     <h1 className='text-[16px] text-black'>Install Setup & Drivers</h1>
                   </button>
                 </Link>
