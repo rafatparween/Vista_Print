@@ -4,6 +4,12 @@ import Slider from "./components/Slider";
 import Content from "./components/Content"
 import NavBar from "./components/Navbar";
 import Footer from "./components/Footer";
+import Customer from "./components/Customer";
+import Technicians from "./components/Technicians";
+import Assistance from "./components/Assistance";
+import Avoid from "./components/Avoid";
+import Helppage from "./components/Helppage";
+
 function Home() {
   return (
     <>
@@ -13,6 +19,11 @@ function Home() {
       <Slider />
       <Header />
       <Content />
+      <Technicians/>
+      <Assistance/>
+      <Avoid/>
+      <Helppage/>
+      <Customer/>
       <Footer />
 
 
