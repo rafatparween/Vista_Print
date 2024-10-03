@@ -7,6 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      maxWidth: {
+        '101rem': '101rem',  // Custom max-width of 101rem
+      },
       fontFamily: {
         'hp-simplified': ['HPSimplifiedLight123', 'sans-serif'],
       },

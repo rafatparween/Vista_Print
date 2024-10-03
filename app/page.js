@@ -9,6 +9,7 @@ import Technicians from "./components/Technicians";
 import Assistance from "./components/Assistance";
 import Avoid from "./components/Avoid";
 import Helppage from "./components/Helppage";
+import Digonode from "./components/Digonode";
 
 function Home() {
   return (
@@ -21,6 +22,7 @@ function Home() {
       <Content />
       <Technicians/>
       <Assistance/>
+      <Digonode/>
       <Avoid/>
       <Helppage/>
       <Customer/>
