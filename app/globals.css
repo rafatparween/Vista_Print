@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+	overflow-x: hidden;
+  }
+  
+
 
 @font-face {
     font-family: 'HPSimplifiedLight123';
@@ -106,4 +111,8 @@
 	opacity: 1;
 	z-index: -1; /* Send the blurred background behind */
   }
+
+ 
+  
+  
   
