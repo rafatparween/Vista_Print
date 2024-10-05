@@ -20,11 +20,11 @@ function Home() {
       <Slider />
       <Header />
       <Content />
-      <Technicians/>
+      {/* <Technicians/>
       <Assistance/>
       <Digonode/>
       <Avoid/>
-      <Helppage/>
+      <Helppage/> */}
       <Customer/>
       <Footer />
 
