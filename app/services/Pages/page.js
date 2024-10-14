@@ -277,6 +277,7 @@ import { useRouter } from 'next/navigation';
 import React, { useState } from 'react';
 import Image from 'next/image';
 import FooterSection from '@/app/components/FooterSection';
+import Popup from '@/app/components/Popup';
 
 function Home() {
   const router = useRouter();
@@ -344,8 +345,8 @@ function Home() {
             backgroundImage: "url('https://wingscarepro.com/setup/resources/assets/css/page/resources/assets/img/top_background_image.png')"
           }}
         >
-          <div className="absolute inset-0 opacity-80"></div>
-          <div className="relative z-10 text-white 2xl:mt-[142px] xl:mt-[116px] 2xl:ml-[-825px] xl:ml-[-567px] ">
+          <div className=" inset-0 opacity-80"></div>
+          <div className="relative z-10 text-white 2xl:mt-[117px] xl:mt-[165px] 2xl:ml-[-825px] xl:ml-[-567px]  ">
             <h1 className="text-4xl font-hp-simplified text-[44px] 2xl:ml-[12px] xl:ml-[-11px]">Get started with your HP printer</h1>
             <p className="mt-[35px] text-[24px] xl:ml-[281px] 2xl:ml-[314px]">Enter your printer name and model number to get the right HP software and drivers.</p>
 
@@ -363,13 +364,15 @@ function Home() {
                 className="bg-gray-300 text-gray-900 rounded-md w-[100px] h-[48px] 2xl:ml-[40px] "
                 style={{ marginLeft: '41px' }}
               >
-                Search
+                Next
               </button>
             </div>
 
+
+
             {/* Dropdown for filtered models */}
             {filteredModels.length > 0 && (
-              <ul className="absolute left-0 mt-1 w-full max-w-lg bg-white border border-gray-300 rounded-lg shadow-lg z-10 2xl:ml-[409px] xl:ml-[223px] text-black">
+              <ul className="absolute left-0 mt-1 w-full max-w-lg bg-white border border-gray-300 rounded-lg shadow-lg z-10 2xl:ml-[314px] xl:ml-[277px] text-black">
                 {filteredModels.map((model) => (
                   <li
                     key={model}
@@ -382,19 +385,26 @@ function Home() {
               </ul>
             )}
           </div>
+          <div className='2xl:ml-[-826px] xl:ml-[-617px] text-white'>
+            <h1 className='underline 2xl:ml-[-426px] 2xl:mt-[25px] xl:ml-[-426px] xl:mt-[25px]'>Where's the printer name?</h1>
+            <h1 className='underline 2xl:ml-[-455px] 2xl:mt-[25px] xl:ml-[-455px] xl:mt-[25px]'>My device is not listed</h1>
+          </div>
 
-          <div className="relative z-10 mt-12 ml-auto">
+
+
+          <div className="flex justify-end  ">
             <img
               src="https://wingscarepro.com/setup/resources/assets/img/defaultPrinterSetup.png"
               alt="Printer setup devices"
               width={350}
               height={196}
-              className="object-contain 2xl:mr-[436px] xl:mr-[202px] 2xl:mr-[232px]"
+              className="object-contain 2xl:ml-[893px] 2xl:mt-[-74px] xl:ml-[631px]"
             />
           </div>
+
         </section>
-        <h1 className="text-[18px] w-[832px] h-[51px] ml-[369px] mt-[100px] text-[#737373] 2xl:ml-[197px]">Install software and drivers on each computer or mobile device you want to print from.</h1>
-        <div className='2xl:ml-[189px]' style={{ display: 'flex', alignItems: 'center' }}>
+        <h1 className="text-[18px] w-[832px] h-[51px] ml-[369px] mt-[100px] text-[#737373] 2xl:ml-[197px] xl:ml-[135px]">Install software and drivers on each computer or mobile device you want to print from.</h1>
+        <div className='2xl:ml-[189px] xl:ml-[130px]' style={{ display: 'flex', alignItems: 'center' }}>
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
             <path fillRule="evenodd" clipRule="evenodd" d="M8.00034 9C8.00034 6.79086 9.7912 5 12.0003 5C14.2095 5 16.0003 6.79086 16.0003 9C16.0003 9.6395 15.8506 10.2426 15.5848 10.7775C15.4619 11.0248 15.5628 11.3249 15.8101 11.4478C16.0574 11.5707 16.3574 11.4698 16.4803 11.2225C16.8133 10.5524 17.0003 9.79734 17.0003 9C17.0003 6.23858 14.7618 4 12.0003 4C9.23892 4 7.00034 6.23858 7.00034 9C7.00034 11.3802 8.66297 13.3708 10.8897 13.8761C11.159 13.9372 11.4268 13.7684 11.4879 13.4991C11.5491 13.2298 11.3803 12.962 11.111 12.9009C9.32974 12.4967 8.00034 10.903 8.00034 9ZM5.1405 21.5995C5.78903 18.4045 8.6145 16 12.0005 16C15.3864 16 18.2119 18.4045 18.8604 21.5995C18.9154 21.8701 19.1793 22.0449 19.4499 21.99C19.7205 21.9351 19.8954 21.6712 19.8404 21.4005C19.0992 17.7487 15.8714 15 12.0005 15C8.12955 15 4.90176 17.7487 4.16048 21.4005C4.10555 21.6712 4.2804 21.9351 4.55102 21.99C4.82165 22.0449 5.08556 21.8701 5.1405 21.5995Z" fill="#212121" />
             <path fillRule="evenodd" clipRule="evenodd" d="M12.0002 3C9.02492 3 6.55542 5.16567 6.08209 8.00667C6.31929 8.04573 6.50024 8.25173 6.50024 8.5V11.5C6.50024 11.7761 6.27639 12 6.00024 12H5.00024C4.7241 12 4.50024 11.7761 4.50024 11.5V8.5C4.50024 8.22386 4.7241 8 5.00024 8H5.07113C5.55636 4.60771 8.47377 2 12.0002 2C15.5267 2 18.4441 4.60771 18.9294 8H19.0002C19.2764 8 19.5002 8.22386 19.5002 8.5V11.5C19.5002 11.7761 19.2764 12 19.0002 12C19.0002 13.1046 18.1048 14 17.0002 14H14.5002C14.5002 14.2761 14.2764 14.5 14.0002 14.5H13.0002C12.7241 14.5 12.5002 14.2761 12.5002 14V13C12.5002 12.7239 12.7241 12.5 13.0002 12.5H14.0002C14.2764 12.5 14.5002 12.7239 14.5002 13H17.0002C17.5525 13 18.0002 12.5523 18.0002 12C17.7241 12 17.5002 11.7761 17.5002 11.5V8.5C17.5002 8.25173 17.6812 8.04573 17.9184 8.00667C17.4451 5.16567 14.9756 3 12.0002 3Z" fill="#212121" />
@@ -403,7 +413,7 @@ function Home() {
             Need additional help with setup? Visit <span className='underline' style={{ color: '#007DBA' }}>HP Support</span>
           </h1>
         </div>
-        <div className="flex items-center 2xl:ml-[193px] 2xl:mt-[59px]">
+        <div className="flex items-center 2xl:ml-[193px] 2xl:mt-[59px] xl:ml-[130px] xl:mt-[63px]">
           <Image src="/unitedlogo.png" alt="United States"
             height={50}
             width={50}
@@ -414,12 +424,22 @@ function Home() {
 
       </div>
       <div className='mt-[350px]'>
-        <FooterSection/>
+        <FooterSection />
 
       </div>
-     
+
     </>
   );
 }
 
 export default Home;
+
+
+
+
+
+
+
+
+
+

@@ -88,7 +88,7 @@ const FooterSection = () => {
       </div>
 
       {/* Lower part with terms and conditions */}
-      <div className="border-t border-gray-600 py-4">
+      {/* <div className="border-t border-gray-600 py-4">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between text-xs text-gray-400">
           <div className="flex flex-wrap space-x-2 mb-2 md:mb-0">
             <a href="#" className="hover:text-white">Recalls</a>
@@ -104,7 +104,7 @@ const FooterSection = () => {
           </div>
           <p className="text-center md:text-left">&copy;2024 HP Development Company, L.P. The information contained herein is subject to change without notice.</p>
         </div>
-      </div>
+      </div> */}
     </footer>
   );
 };

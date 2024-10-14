@@ -164,7 +164,7 @@ function Printersearch() {
                 </div>
                 <Link href="./install/process">
                   <button className="install border border-white mt-8 bg-white w-[230px] h-[50px]  2xl:ml-[-189px] xl:ml-[-301px] py-2 px-6 rounded-lg font-bold shadow-md hover:bg-gray-100 transition duration-300 relative overflow-hidden">
-                    <h1 className='text-[16px] text-black'>Install Setup & Drivers</h1>
+                    <h1 className='text-[16px] text-black'>Install Hp Easy Start</h1>
                   </button>
                 </Link>
               </div>
