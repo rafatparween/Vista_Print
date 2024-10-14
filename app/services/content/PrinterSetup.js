@@ -2,7 +2,7 @@
 import React from 'react';
 import { useRouter } from 'next/navigation'; 
 import './PrinterSetup.css';
-import JivoChat from '@/app/Jivochat';
+// import JivoChat from '@/app/Jivochat';
 
 const PrinterSetup = () => {
   const router = useRouter(); 
@@ -26,7 +26,7 @@ const PrinterSetup = () => {
       </div>
 
       <img src='boyimage.png' alt="Printer" className="printer-image" />
-      <JivoChat/>
+      {/* <JivoChat/> */}
     </div>
   );
 };

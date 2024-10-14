@@ -112,6 +112,15 @@ body {
 	z-index: -1; /* Send the blurred background behind */
   }
 
+
+  @font-face {
+	font-family: "HPSimplifiedLight123";
+	src: url('/fonts/HPSimplifiedLight123.woff2') format('woff2'),
+		 url('/fonts/HPSimplifiedLight123.woff') format('woff');
+	font-weight: normal; /* Adjust if you have different weights */
+	font-style: normal; /* Adjust if you have italic or oblique styles */
+  }
+
  
   
   

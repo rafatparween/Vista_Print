@@ -20,6 +20,7 @@ import Technicians from "../components/Technicians";
 import Assistance from "../components/Assistance";
 import Helppage from "../components/Helppage";
 import ChatSection from "../components/ChatSection";
+import FooterSection from "../components/FooterSection";
 
 // import './globals.css'
 function Home() {
@@ -39,6 +40,7 @@ function Home() {
       <Support />
       <Solutions />
       <PrinterGuide />
+      <FooterSection/>
      
     </>
   );
