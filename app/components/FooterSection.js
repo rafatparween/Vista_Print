@@ -5,7 +5,7 @@ const FooterSection = () => {
   return (
     <footer className="bg-black text-gray-400 text-sm">
       {/* Upper part with links */}
-      <div className="max-w-7xl mx-auto py-10 grid grid-cols-2 md:grid-cols-5 gap-8">
+      <div className="max-w-7xl mx-auto py-10 grid grid-cols-2 md:grid-cols-5 gap-8 2xl:ml-[179px] xl:ml-[133px]">
         {/* First Column */}
         <div>
           <ul>

@@ -386,7 +386,7 @@ function Home() {
             )}
           </div>
           <div className='2xl:ml-[-826px] xl:ml-[-617px] text-white'>
-            <h1 className='underline 2xl:ml-[-426px] 2xl:mt-[25px] xl:ml-[-426px] xl:mt-[25px]'>Where's the printer name?</h1>
+            <Popup/>
             <h1 className='underline 2xl:ml-[-455px] 2xl:mt-[25px] xl:ml-[-455px] xl:mt-[25px]'>My device is not listed</h1>
           </div>
 
@@ -433,6 +433,9 @@ function Home() {
 }
 
 export default Home;
+
+
+
 
 
 
