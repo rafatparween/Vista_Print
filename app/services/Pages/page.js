@@ -377,7 +377,7 @@ function Home() {
                   <li
                     key={model}
                     onClick={() => handleModelClick(model)} // Set model on click
-                    className="cursor-pointer p-2 hover:bg-gray-100"
+                    className="cursor-pointer p-2 hover:bg-[#007DBA] hover:text-white"
                   >
                     {model}
                   </li>

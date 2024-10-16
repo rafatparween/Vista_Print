@@ -4,10 +4,10 @@ import Image from 'next/image';
 
 const NavbarSection = () => {
   return (
-    <header className="bg-white py-4 border-b-2 ">
-      <div className="container mx-auto flex items-center 2xl:ml-[179px]">
+    <header className="bg-white py-2 border-b-2 h-[72px] ">
+      <div className="container mx-auto flex items-center 2xl:ml-[179px] xl:ml-[179px]">
         {/* HP Logo */}
-        <div className="flex items-center mr-4">
+        <div className="flex items-center mr-4 xl:ml-[-60px] 2xl:ml-[2px]">
           <Image
             src="/hplogo.png" // Replace with the correct path to your logo
             alt="HP Logo"
@@ -16,7 +16,7 @@ const NavbarSection = () => {
           />
         </div>
         {/* Product Links */}
-        <nav className="flex space-x-8 text-gray-600 text-lg">
+        <nav className="flex space-x-8 text-gray-600 text-[16px] 2xl:ml-[42px] xl:ml-[42px]">
           <a href="#" className="hover:text-[#007DBA]">OfficeJet</a>
           <a href="#" className="hover:text-[#007DBA]">DeskJet</a>
           <a href="#" className="hover:text-[#007DBA]">ENVY</a>

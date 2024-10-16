@@ -147,8 +147,8 @@ function Printersearch() {
           <div className="absolute inset-0 opacity-80"></div>
 
           {/* Main content */}
-          <div className="relative z-10 text-white 2xl:ml-[-392px]">
-            <h1 className="text-[54px] mb-4 xl:ml-[-247px] 2xl:ml-[5px]">Complete setup using Professionals Help</h1>
+          <div className="relative z-10 text-white 2xl:ml-[-392px] xl:ml-[108px]">
+            <h1 className="text-[54px] mb-4 xl:ml-[-289px] 2xl:ml-[5px]">Complete setup using Professionals Help</h1>
             <div className="border-t border-white w-[1100px] mx-auto mb-8 mt-[-19px] xl:ml-[-4px]"></div>
 
             {/* Main Content Section */}
@@ -187,8 +187,8 @@ function Printersearch() {
         </section>
 
         {/* Additional content */}
-        <div className="flex flex-col items-center">
-          <h1 className="mt-[30px] ml-[-592px] text-[16px]">Also available on:</h1>
+        <div className="flex flex-col items-center xl:ml-[-468px] 2xl:ml-[-688px]">
+          <h1 className="mt-[30px] 2xl:ml-[-592px] xl:ml-[-592px] text-[16px]">Also available on:</h1>
           <img 
             src="https://www.freepnglogos.com/uploads/app-store-logo-png/google-play-and-apple-app-store-logos-22.png" 
             className="h-[50px] mt-4 ml-[-406px] " 
