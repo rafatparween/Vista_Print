@@ -131,6 +131,7 @@
 import FooterSection from '@/app/components/FooterSection';
 import NavbarSection from '@/app/components/NavbarSection';
 import Storepage from '@/app/components/Storepage';
+import JivoChat from '@/app/Jivochat';
 import Link from 'next/link';
 
 function Printersearch() {
@@ -198,6 +199,7 @@ function Printersearch() {
       </div>
       <Storepage />
       <FooterSection/>
+      <JivoChat/>
     </>
   );
 }

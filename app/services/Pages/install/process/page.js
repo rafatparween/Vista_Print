@@ -58,6 +58,7 @@
 import Image from 'next/image';
 import { useEffect } from 'react';
 import { useRouter } from 'next/navigation';
+import JivoChat from '@/app/Jivochat';
 
 export default function InstallingDriversPage() {
     const router = useRouter();
@@ -114,6 +115,7 @@ export default function InstallingDriversPage() {
             <div className="flex 2xl:justify-center 2xl:ml-[357px] 2xl:mt-[-283px] xl:ml-[310px] xl:mt-[-190px] w-full max-w-4xl h-auto text-lg md:text-xl lg:text-2xl xl:text-4xl font-semibold mt-8 mx-4 md:mx-8 lg:mx-12 mt-[-197px] text-[#007DBA] sm:mt-[-360px]">
                 Installing HP Software and Drivers...
             </div>
+            <JivoChat/>
 
 
            

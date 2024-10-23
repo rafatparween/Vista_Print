@@ -10,6 +10,8 @@ import Assistance from "./components/Assistance";
 import Avoid from "./components/Avoid";
 import Helppage from "./components/Helppage";
 import Digonode from "./components/Digonode";
+import JivoChat from "./Jivochat";
+
 
 
 function Home() {
@@ -28,6 +30,7 @@ function Home() {
       <Helppage/> */}
       <Customer/>
       <Footer />
+      <JivoChat/>
 
 
     </>

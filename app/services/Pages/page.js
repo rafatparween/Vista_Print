@@ -278,6 +278,7 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 import FooterSection from '@/app/components/FooterSection';
 import Popup from '@/app/components/Popup';
+import JivoChat from '@/app/Jivochat';
 
 function Home() {
   const router = useRouter();
@@ -427,6 +428,7 @@ function Home() {
         <FooterSection />
 
       </div>
+      <JivoChat/>
 
     </>
   );
