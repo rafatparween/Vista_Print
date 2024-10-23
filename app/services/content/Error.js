@@ -15,4 +15,26 @@ export default function ErrorPage() {
       </div>
     );
   }
+
+
+// import Image from "next/image";
+// import JivoChat from "@/app/Jivochat";
+// export default function ErrorPage() {
+//       return (
+//         <div className="flex flex-col items-center justify-center min-h-screen bg-gray-200 ">
+          
+    
+//             <div className="mb-6 flex justify-center">
+//               <Image
+//                 src="/error.png" 
+//                 alt="Printer Error"
+//                 width={892}
+//                 height={632}
+//               />
+            
+//           </div>
+//           <JivoChat/>
+//         </div>
+//       );
+//     };
   
