@@ -4,7 +4,7 @@ import "./globals.css";
 // import JivoChat from "./Jivochat";
 
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"] })
 
 export const metadata = {
   title: "123-printerlivesolution",
