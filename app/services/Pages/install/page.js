@@ -142,14 +142,15 @@ function Printersearch() {
         <section
           className="flex flex-col justify-center items-center text-center py-12 relative bg-cover bg-center h-[530px]"
           style={{
-            backgroundImage: "url('https://wingscarepro.com/setup/resources/assets/css/page/resources/assets/img/top_background_image.png')"
+            backgroundImage: "url('https://as1.ftcdn.net/v2/jpg/05/21/66/12/1000_F_521661218_MNYc5lCrIQUKKwBfIGzxJYHYxZzwNof9.jpg')"
           }}
         >
-          <div className="absolute inset-0 opacity-80"></div>
+          {/* <div className="absolute inset-0 opacity-80"></div> */}
+          <div className="absolute inset-0 bg-[#007DBA] opacity-60"></div>
 
           {/* Main content */}
           <div className="relative z-10 text-white 2xl:ml-[-392px] xl:ml-[108px]">
-            <h1 className="text-[54px] mb-4 xl:ml-[-289px] 2xl:ml-[5px]">Complete setup using Professionals Help</h1>
+            <h1 className="text-[54px] mb-4 xl:ml-[-145px] 2xl:ml-[5px]">Complete setup using Professionals Help</h1>
             <div className="border-t border-white w-[1100px] mx-auto mb-8 mt-[-19px] xl:ml-[-4px]"></div>
 
             {/* Main Content Section */}
@@ -176,7 +177,7 @@ function Printersearch() {
               {/* Printer and Devices Image */}
               <div className="relative z-10 mt-12 lg:mt-0 lg:w-1/2 flex justify-center">
                 <img
-                  src="https://wingscarepro.com/setup/resources/printer_images/OTHER-PRINTERS/290x245.png"  // Replace with actual path
+                  src="https://in-media.apjonlinecdn.com/catalog/product/cache/b3b166914d87ce343d4dc5ec5117b502/s/e/selene_4303_fdw_00002.png"  // Replace with actual path
                   alt="Printer setup devices"
                   width={316}
                   height={252}

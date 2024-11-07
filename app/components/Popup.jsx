@@ -292,6 +292,8 @@ const Popup = () => {
               &times;
             </button>
 
+            
+
             {/* Title and Instructions */}
             <div className="text-center mb-4">
               <h2 className="text-lg font-semibold">Find the product name</h2>
@@ -336,9 +338,11 @@ const Popup = () => {
                   }`}
                 ></span>
               ))}
+              <h1 className='underline 2xl:ml-[-455px] 2xl:mt-[25px] xl:ml-[-455px] xl:mt-[25px]'>My device is not listed</h1>
             </div>
           </div>
         </div>
+        
       )}
     </div>
   );

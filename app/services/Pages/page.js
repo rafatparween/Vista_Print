@@ -340,12 +340,20 @@ function Home() {
     <>
       <NavbarSection />
       <div className="h-[409px] ">
-        <section
-          className="flex flex-col justify-center items-center text-center py-12 relative bg-cover bg-center h-[409px]"
-          style={{
-            backgroundImage: "url('https://wingscarepro.com/setup/resources/assets/css/page/resources/assets/img/top_background_image.png')"
-          }}
-        >
+      <section
+  className="relative flex flex-col justify-center items-center text-center py-12 h-[409px] bg-cover bg-center"
+  style={{
+    backgroundImage: "url('https://as1.ftcdn.net/v2/jpg/05/21/66/12/1000_F_521661218_MNYc5lCrIQUKKwBfIGzxJYHYxZzwNof9.jpg')"
+  }}
+>
+  {/* Overlay div for background color */}
+  <div className="absolute inset-0 bg-[#007DBA] opacity-60"></div>
+
+  {/* Content of the section */}
+  <div className="relative z-10">
+    <h1 className="text-white">Your Content Here</h1>
+  </div>
+
           <div className=" inset-0 opacity-80"></div>
           <div className="relative z-10 text-white 2xl:mt-[117px] xl:mt-[165px] 2xl:ml-[-825px] xl:ml-[-567px]  ">
             <h1 className="text-4xl font-hp-simplified text-[44px] 2xl:ml-[12px] xl:ml-[-11px]">Get started with your HP printer</h1>
@@ -386,7 +394,7 @@ function Home() {
               </ul>
             )}
           </div>
-          <div className='2xl:ml-[-826px] xl:ml-[-617px] text-white'>
+          <div className='2xl:ml-[-826px] xl:ml-[-617px] text-white '>
             <Popup/>
             <h1 className='underline 2xl:ml-[-455px] 2xl:mt-[25px] xl:ml-[-455px] xl:mt-[25px]'>My device is not listed</h1>
           </div>
