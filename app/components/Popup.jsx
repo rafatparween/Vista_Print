@@ -229,6 +229,7 @@
 import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
+import Image from 'next/image';
 
 const Popup = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -313,10 +314,12 @@ const Popup = () => {
               </button>
 
               {/* Image */}
-              <img
+              <Image
                 src={images[currentSlide]} // Current slide image
                 alt={`Printer ${currentSlide + 1}`}
-                className="w-64 h-64 object-cover mx-auto"
+                height={300}
+                width={300}
+                className="object-cover mx-auto"
               />
 
               {/* Right Arrow */}
