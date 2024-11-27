@@ -1,75 +1,95 @@
 import React from 'react';
 
-export default function PrivacyPolicy() {
+export default function Privacy() {
   return (
-    <div className="container mx-auto px-4 py-16 ">
+    <div className="container mx-auto px-4 ">
       <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center mt-[100px]">Privacy Policy</h2>
       <div className="space-y-8 text-gray-700">
         
         <section>
           <h3 className="text-2xl font-semibold text-gray-900 mb-4">Introduction</h3>
           <p>
-            Uzair Graphic & Printing values your privacy. This Privacy Policy outlines how we collect, use, and protect your personal information when you use our services or visit our website.
+            At Hewlett Hub Solutions, we are dedicated to maintaining the privacy and security of your personal information. This Privacy Policy explains how we collect, use, store, and protect your personal data when you interact with our website or use our services. By using our website or services, you consent to the practices outlined in this policy.
           </p>
         </section>
         
         <section>
           <h3 className="text-2xl font-semibold text-gray-900 mb-4">Information We Collect</h3>
           <p>
-            We collect personal information that you provide to us when you register, place an order, subscribe to our newsletter, or use other services. This may include your name, email address, phone number, payment details, and any other details relevant to your order.
+            We gather information in several ways, both directly from you and automatically when you interact with our website or services. The types of information we collect include:
           </p>
-          <p>
-            Additionally, we may automatically collect information about your device, browser type, IP address, and how you interact with our website through cookies and similar technologies.
-          </p>
+          <ul className="list-disc pl-6">
+            <li><strong>Personal Information:</strong> When you register, place an order, subscribe to our communications, or contact us, we collect details such as your name, email address, phone number, payment information, and billing/shipping addresses.</li>
+            <li><strong>Order and Transaction Data:</strong> We collect data regarding the products or services you purchase, the payment method used, and your order history.</li>
+            <li><strong>Technical Information:</strong> We automatically gather information such as your device type, browser details, IP address, and how you use our website (e.g., pages viewed, time spent on the site) through cookies and similar technologies.</li>
+          </ul>
         </section>
         
         <section>
           <h3 className="text-2xl font-semibold text-gray-900 mb-4">How We Use Your Information</h3>
           <p>
-            The information we collect is used to process your orders, provide customer service, personalize your experience, and improve our products and services. We may also use your information to send you promotional offers, updates, and newsletters if you have opted in to receive them.
+            The information we collect is used for the following purposes:
           </p>
+          <ul className="list-disc pl-6">
+            <li><strong>To Process Orders:</strong> We use your personal and payment details to process your orders, fulfill requests, and deliver the products or services you've requested.</li>
+            <li><strong>Customer Support:</strong> We may use your contact information to respond to inquiries, provide customer support, and resolve any issues you may encounter.</li>
+            <li><strong>Improvement of Services:</strong> Your information helps us personalize your experience and improve the quality of our services and website functionality.</li>
+            <li><strong>Marketing Communications:</strong> If you’ve opted in to receive newsletters or promotional emails, we may use your email address to send you updates, special offers, and other marketing communications.</li>
+          </ul>
         </section>
         
         <section>
           <h3 className="text-2xl font-semibold text-gray-900 mb-4">Information Sharing</h3>
           <p>
-            We do not sell or rent your personal information to third parties. However, we may share your information with trusted third parties who assist us in operating our website, conducting our business, or servicing you, as long as those parties agree to keep this information confidential.
+            We value your privacy and do not sell, rent, or trade your personal information. However, we may share your data with trusted third-party partners in the following scenarios:
           </p>
-          <p>
-            We may also disclose your information when required by law, to enforce our site policies, or to protect our rights, property, or safety.
-          </p>
+          <ul className="list-disc pl-6">
+            <li><strong>Service Providers:</strong> We may share your information with companies that provide services to help operate our business, such as payment processors, shipping companies, and marketing platforms. These third parties are obligated to handle your information securely and in compliance with applicable privacy laws.</li>
+            <li><strong>Legal Requirements:</strong> We may disclose your personal information if required by law, in response to a legal process, or to protect our rights, safety, or property, as well as that of our users or others.</li>
+          </ul>
         </section>
         
         <section>
           <h3 className="text-2xl font-semibold text-gray-900 mb-4">Data Security</h3>
           <p>
-            We implement a variety of security measures to ensure the safety of your personal information. Your information is stored on secure servers and is only accessible by a limited number of employees who have special access rights to such systems.
+            We take the security of your personal information seriously and implement a range of security measures to safeguard it. These measures include the use of secure servers, encryption, and access control to prevent unauthorized access, alteration, or disclosure of your information.
+          </p>
+        </section>
+        
+        <section>
+          <h3 className="text-2xl font-semibold text-gray-900 mb-4">Your Rights and Choices</h3>
+          <p>
+            You have the right to access and correct any personal information we hold about you. You can update your details through your account or by contacting us directly.
+          </p>
+          <ul className="list-disc pl-6">
+            <li><strong>Opt-Out:</strong> If you no longer wish to receive marketing communications, you can unsubscribe from our emails at any time by clicking the unsubscribe link at the bottom of the email or by contacting us directly.</li>
+            <li><strong>Cookies:</strong> You can manage your cookie preferences by adjusting your browser settings. However, please note that some features of our website may not function properly if cookies are disabled.</li>
+          </ul>
+        </section>
+        
+        <section>
+          <h3 className="text-2xl font-semibold text-gray-900 mb-4">Changes to This Privacy Policy</h3>
+          <p>
+            Hewlett Hub Solutions may update this Privacy Policy periodically to reflect changes in our practices, legal requirements, or business operations. Any changes will be posted on this page with the updated date. We encourage you to review this policy regularly for the latest information.
           </p>
         </section>
         
         <section>
           <h3 className="text-2xl font-semibold text-gray-900 mb-4">Your Consent</h3>
           <p>
-            By using our website, you consent to our Privacy Policy and agree to its terms. If we make changes to our Privacy Policy, we will update the modification date below. We encourage you to review this policy periodically.
-          </p>
-        </section>
-        
-        <section>
-          <h3 className="text-2xl font-semibold text-gray-900 mb-4">Changes to Our Privacy Policy</h3>
-          <p>
-            Uzair Graphic & Printing may update this Privacy Policy from time to time. We will notify you of any significant changes by posting the new policy on our website. Changes will take effect immediately upon posting.
+            By using our website or services, you consent to the collection, use, and sharing of your personal information as described in this Privacy Policy. If you do not agree with any part of this policy, please refrain from using our website and services.
           </p>
         </section>
         
         <section>
           <h3 className="text-2xl font-semibold text-gray-900 mb-4">Contact Us</h3>
           <p>
-            If you have any questions or concerns about this Privacy Policy, please contact us at:
+            If you have any questions or concerns about this Privacy Policy or how your personal information is handled, please feel free to contact us:
           </p>
           <p className="mt-4">
-            Email: support@uzairgraphicprinting.com <br />
-            Phone: 1-800-UZAIRPRINT <br />
-            Address: Uzair Graphic & Printing, 1234 Printing Lane, Print City, USA
+            Email: support@hewletthubsolutions.com <br />
+            Phone: 1-800-123-HHS <br />
+            Address: Hewlett Hub Solutions, 456 Print Avenue, Print City, USA
           </p>
         </section>
         

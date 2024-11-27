@@ -11,13 +11,13 @@ const Home = () => {
                 <p className="text-gray-700 mb-6">
                     Empowering Small Businesses, One Print at a Time
 
-                    At Uzair graphic & printing, we believe that small businesses are the backbone of our communities and economies. That's why we're dedicated to providing the tools and resources they need to thrive. Since our inception, we've been on a mission to empower small business owners to confidently market themselves with affordable, high-quality, and customizable print and digital solutions.
+                    At Hewlett Hub Solutions, we believe that small businesses are the backbone of our communities and economies. That's why we're dedicated to providing the tools and resources they need to thrive. Since our inception, we've been on a mission to empower small business owners to confidently market themselves with affordable, high-quality, and customizable print and digital solutions.
                 </p>
                 <p className="text-gray-700 mb-6">
                 </p>
                 <p className="text-gray-700 mb-6">
                     <h2 className="text-3xl font-bold text-gray-900 mb-6">
-                        Why <span className="text-blue-600">Uzair graphic & printing</span>?
+                        Why <span className="text-blue-600">Hewlett Hub Solutions</span>?
                     </h2>
                     <p className="text-gray-700 mb-6">
                         Unmatched Quality: Our products are crafted with care, using only the best materials and cutting-edge printing technology.
@@ -30,7 +30,7 @@ const Home = () => {
                     Our<span className="text-blue-600">Story</span>?
                 </h2>
                 <p className="text-gray-700 mb-6">
-                    What started as a simple idea to provide easy-to-use, online printing services has grown into a global company trusted by millions of businesses worldwide. Over the years,Uzair graphic & printing has evolved to meet the changing needs of our customers, offering a wide range of products, from business cards and signage to websites and digital marketing services.
+                    What started as a simple idea to provide easy-to-use, online printing services has grown into a global company trusted by millions of businesses worldwide. Over the years, Hewlett Hub Solutions has evolved to meet the changing needs of our customers, offering a wide range of products, from business cards and signage to websites and digital marketing services.
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                     <div className="flex items-start">

@@ -3,6 +3,7 @@ import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch, faPercent, faLifeRing, faUser, faCartShopping } from "@fortawesome/free-solid-svg-icons";
 import Link from 'next/link';
+import Image from "next/image";
 
 const NavBar = () => {
   return (
@@ -10,19 +11,20 @@ const NavBar = () => {
       
       {/* Logo */}
       <div className="flex items-center pl-4 md:pl-8">
-        <Link legacyBehavior href="#">
+      <Link legacyBehavior href="#">
           <a>
-            <img
-              className="h-[93px] w-[93px] text-[50px] "
-              src="https://static.vecteezy.com/system/resources/previews/009/324/629/non_2x/ugp-letter-logo-design-on-black-background-ugp-creative-initials-letter-logo-concept-ugp-letter-design-vector.jpg"
+            <Image
+              className="text-[50px] "
+              src="/hhslogo.webp"
+              height={124}
+              width={133}
               alt="Logo"
             />
           </a>
         </Link>
         <Link legacyBehavior href="#">
-          <a className="text-[18px] text-[#0C71C3]">Uzair graphic & Printing</a>
+          <a className="text-[27px] text-[#0C71C3]">Hewlett Hub Solutions</a>
         </Link>
-
       </div>
       
       {/* Search Bar */}
